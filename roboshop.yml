@@ -15,7 +15,7 @@
         Environment: "{{ Environment }}"
     loop: "{{ instances }}"
     register: ec2_output
-    when: action == create 
+    when: action == "create" 
 
   - name: create route 53 records
     amazon.aws.route53:
@@ -27,7 +27,7 @@
       value: "{{ item.instances[0].private_ip_address }}"
       wait: true
     loop: "{{ ec2_output.results }}"
-    when: action == create 
+    when: action == "create" 
 
   - name: create route 53 records
     amazon.aws.route53:
@@ -41,7 +41,7 @@
     loop: "{{ ec2_output.results }}"
     when: # and
     - item.item == frontend
-    - action == create  
+    - action == "create"  
 
   - name: delete route53 records
     amazon.aws.route53:
