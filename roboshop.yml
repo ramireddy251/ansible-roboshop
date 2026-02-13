@@ -3,8 +3,6 @@
   connection: local
   vars_files:
   - variables.yml
-  vars:
-    instances: "{{ instances}}"
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
