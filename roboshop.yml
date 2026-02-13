@@ -40,7 +40,7 @@
       wait: true
     loop: "{{ ec2_output.results }}"
     when: # and
-    - item.item == frontend
+    - item.item == "frontend"
     - action == "create"  
 
   - name: delete route53 records
