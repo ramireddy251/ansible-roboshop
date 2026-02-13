@@ -7,3 +7,5 @@ instances:
 Project: roboshop
 Environment: Dev
 domain_name: ramireddy.co.in
+ansible_user=ec2-user
+ansible_password=DevOps321
