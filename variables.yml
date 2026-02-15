@@ -5,6 +5,7 @@ instances:
 - mongodb
 - catalogue
 - redis
+- user
 Project: roboshop
 Environment: Dev
 action: create
