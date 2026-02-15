@@ -10,6 +10,7 @@
       security_group: "{{ security_group }}"
       image_id: "{{ image_id }}"
       name: "{{ item }}"
+      wait: false
       tags:
         Project: "{{ Project }}"
         Environment: "{{ Environment }}"
