@@ -4,6 +4,7 @@ image_id: ami-0220d79f3f480ecf5
 instances: 
 - mongodb
 - catalogue
+- redis
 Project: roboshop
 Environment: Dev
 action: create
