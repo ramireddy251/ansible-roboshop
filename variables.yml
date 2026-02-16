@@ -7,6 +7,9 @@ instances:
 - redis
 - user
 - cart
+- mysql
+- shipping
+- rabbitmq
 Project: roboshop
 Environment: Dev
 action: create
