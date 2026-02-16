@@ -10,6 +10,8 @@ instances:
 - mysql
 - shipping
 - rabbitmq
+- payment
+- frontend
 Project: roboshop
 Environment: Dev
 action: create
