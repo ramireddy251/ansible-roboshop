@@ -6,12 +6,12 @@ instances:
 - catalogue
 - redis
 - user
-# - cart
-# - mysql
-# - shipping
-# - rabbitmq
-# - payment
-# - frontend
+- cart
+- mysql
+- shipping
+- rabbitmq
+- payment
+- frontend
 Project: roboshop
 Environment: Dev
 action: create
